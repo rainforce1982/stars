@@ -1,0 +1,19 @@
+const ORDER_STATUS_ENUM = {
+  NEED_PAY: 0,
+  PAYED: 1,
+  FINISHIED: 10,
+  PAY_TIMEOUT: -1,
+  BAD_REQUEST: -4
+}
+
+const CART_STATUS_ENUM = {
+  WAITING: 0,
+  SUCCESS: 1,
+  CART_FAILED: -1,
+  BAD_REQUEST: -4
+}
+
+module.exports = {
+  ORDER_STATUS_ENUM,
+  CART_STATUS_ENUM
+}
