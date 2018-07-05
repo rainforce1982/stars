@@ -10,7 +10,8 @@
         </div>
           <div class="description">
             <!-- {{$store.state.room.RoomAreaName || ''}} - <router-link :to="{path:'room', query:{shopID:$route.query.shopID, code: $route.query.code, state: $route.query.state}}"  class="description">{{$store.state.room.RoomName || ''}}</router-link> -->
-            {{$store.state.room.RoomAreaName || ''}} - <router-link :to="{path:'room', query:{t:1, code: $route.query.code, state: $route.query.state, shopID:encodeURI($route.query.shopID)}}" class="description">{{$store.state.room.RoomName || ''}}</router-link>
+            {{$store.state.room.RoomAreaName || ''}} - {{$store.state.room.RoomName || ''}}
+            <!-- <router-link :to="{path:'room', query:{t:1, code: $route.query.code, state: $route.query.state, shopID:encodeURI($route.query.shopID)}}" class="description">{{$store.state.room.RoomName || ''}}</router-link> -->
           </div>
         <div v-if="seller.supports" class="support">
           <img class="icon" 
