@@ -199,7 +199,7 @@
     },
     methods: {
       imgs (id) {
-        let url = `http://nstart.cc:8686/uploads/shop/${id}.jpg`
+        let url = `${this.$store.state.shop.IP}/imggoods/${id}.jpg`
         return url
       },
       setErrorImg (e) {
@@ -775,6 +775,7 @@
   background-color: #5e625f;  
   opacity: 0.6;
   border-radius: 50%; 
+  display: none;
   text-align: center;
   z-index: 100;
 }
