@@ -245,6 +245,7 @@
           }
         }).then(res => {
           self.seller = res.data
+          document.title = self.seller.Name
           self.$store.commit('setShop', {shopID: parseInt(self.shopID), ...this.seller})
         })
       },
